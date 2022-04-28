@@ -28,7 +28,7 @@ const App = () => {
       type: "email",
       placeholder: "Email",
       errorMessage: "It should be a valid email address!",
-      //pattern: "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/",
+      pattern: "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/",
       label: "Email",
       required: true,
     },
@@ -65,7 +65,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <form>
+      <form onSubmit={handleSubmit}>
         <h1>Login Form</h1>
         {inputs.map((input) => (
           <FormInput
@@ -75,7 +75,7 @@ const App = () => {
             onChange={onChange}
           />
         ))}
-        <button onSubmit={handleSubmit}>Submit</button>
+        <button>Submit</button>
       </form>
     </div>
   );
