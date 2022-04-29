@@ -1,12 +1,12 @@
-import { useState } from "react";
-import "./FormInput.style.css";
+import { useState } from "react"
+import "./FormInput.style.css"
 
 const FormInput = (props) => {
   const [focused, setFocused] = useState(false);
   const { label, errorMessage, onChange, id, ...inputProps } = props;
 
   const handleFocus = (e) => {
-    setFocused(true);
+    setFocused(true)
   };
 
   return (
@@ -26,4 +26,4 @@ const FormInput = (props) => {
   );
 };
 
-export default FormInput;
+export default FormInput

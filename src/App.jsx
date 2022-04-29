@@ -28,7 +28,7 @@ const App = () => {
       type: "email",
       placeholder: "Email",
       errorMessage: "It should be a valid email address!",
-      pattern: "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/",
+      //pattern: "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/",
       label: "Email",
       required: true,
     },
@@ -81,4 +81,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App
