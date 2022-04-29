@@ -29,7 +29,7 @@ const App = () => {
       type: "email",
       placeholder: "Email",
       errorMessage: "It should be a valid email address!",
-      //pattern: "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/",
+      pattern: "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/",
       label: "Email",
       required: true,
     },
@@ -83,7 +83,7 @@ const App = () => {
 };
 
 //const getStateToProps(state) => ({
-//  inputs: state.input.inputs
+//  input: state.inputs.input
 //})
 
 //export defult connect(getStateToProps, null)(App)

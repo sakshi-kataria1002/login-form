@@ -18,7 +18,7 @@ const INTIAL_STATE = {
           type: "email",
           placeholder: "Email",
           errorMessage: "It should be a valid email address!",
-          //pattern: "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/",
+          pattern: "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/",
           label: "Email",
           required: true,
         },
@@ -40,7 +40,7 @@ const INTIAL_STATE = {
           placeholder: "Confirm Password",
           errorMessage: "Passwords don't match!",
           label: "Confirm Password",
-          //pattern: values.password,
+          pattern: values.password,
           required: true,
         }
       ]
