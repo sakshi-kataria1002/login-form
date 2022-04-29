@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import FormInput from "./components/FormInput";
+//import {connect} from 'react-redux'
 
 const App = () => {
   const [values, setValues] = useState({
@@ -28,7 +29,7 @@ const App = () => {
       type: "email",
       placeholder: "Email",
       errorMessage: "It should be a valid email address!",
-      pattern: "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/",
+      //pattern: "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/",
       label: "Email",
       required: true,
     },
@@ -81,4 +82,9 @@ const App = () => {
   );
 };
 
+//const getStateToProps(state) => ({
+//  inputs: state.input.inputs
+//})
+
+//export defult connect(getStateToProps, null)(App)
 export default App
